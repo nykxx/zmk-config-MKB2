@@ -53,11 +53,6 @@
             key-positions = <12 13 14>;
         };
 
-        toggle_autoshift {
-            bindings = <&tog AUTOSHIFT>;
-            key-positions = <0 11>;
-        };
-
         toggle_IME {
             bindings = <&kp LC(SPACE)>;
             key-positions = <36 41>;
@@ -117,14 +112,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&lt FUNCS BSPC>, <&kp BSPC>;
+            bindings = <&lt FUNC BSPC>, <&kp BSPC>;
         };
 
         td_spc: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&lt FUNCS SPACE>, <&kp SPACE>;
+            bindings = <&lt FUNC SPACE>, <&kp SPACE>;
         };
 
         mouse_scroll: mouse_wheel_scroll {
