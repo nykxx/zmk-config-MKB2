@@ -45,7 +45,7 @@ layers:
   - {t: RET, h: Mark}
   - {t: BACKSPACE, h: Fnc}
   - {t: Num, h: toggle}
-  - MENU
+  - APP
   - {t: F13, h: RALT}
   - LEFT
   - UP
@@ -158,10 +158,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
-  - {t: ENTER, type: held}
-  - ENTER
-  - ENTER
-  - ENTER
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,12 +215,12 @@ layers:
   - KP SLASH
   - KP DOT
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - ENTER
-  - ENTER
-  - {t: ENTER, type: held}
-  - {t: ENTER, type: held}
-  - ENTER
-  - ENTER
+  - KP 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -235,7 +235,7 @@ layers:
   - PG DN
   - END
   - ''
-  - KP 0
+  - ''
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
