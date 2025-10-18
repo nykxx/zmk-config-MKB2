@@ -218,7 +218,7 @@ layers:
   - ENTER
   - ENTER
   - {t: ENTER, type: held}
-  - ENTER
+  - {t: ENTER, type: held}
   - ENTER
   - ENTER
   - {t: ▽, type: trans}
@@ -234,7 +234,7 @@ layers:
   - ENTER
   - PG DN
   - END
-  - {type: held}
+  - ''
   - KP 0
   Mouse:
   - {t: ▽, type: trans}
@@ -328,8 +328,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&mkp MB1', type: held}
-  - {t: '&mkp MB3', type: held}
+  - '&mkp MB1'
+  - '&mkp MB3'
   - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -417,10 +417,10 @@ combos:
 - p: [12, 13]
   k: TAB
 - p: [33, 32]
-  k: Scr
+  k: Mark
 - p: [16, 15]
-  k: Scr
-- p: [39, 42]
+  k: Mark
+- p: [40, 41]
   k: Alt+SPACE
 - p: [12, 13, 14]
   k: CAPS
@@ -428,5 +428,5 @@ combos:
   k: Ctl+SPACE
 - p: [24, 36]
   k: LEFT GUI
-- p: [56, 39]
+- p: [39, 40]
   k: Num
