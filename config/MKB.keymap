@@ -208,7 +208,7 @@
 &kp ESC     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
 &caps_word  &kp LC(Y)  &none      &none      &none      &none          &none      &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp F12
 &kp LC(S)   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)      &none      &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp LS(LG(S))
-&trans      &trans     &kp LALT              &kp ENTER  &kp ENTER      &kp ENTER  &kp ENTER             &trans     &trans     &trans
+&trans      &trans     &kp LALT              &trans     &trans         &trans     &trans                &trans     &trans     &trans
 &kp LEFT    &kp UP     &kp SPACE  &kp DOWN   &kp RIGHT                            &kp HOME   &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                                   &none                                                      &none
             >;
