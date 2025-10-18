@@ -95,4 +95,7 @@ jobs:
         with:
           name: '${{ inputs.artifact_name }}'
           path: 'firmware/${{ steps.branch-name.outputs.branch }}/*'
+  draw:
+    needs: upload-firmware
+    uses: ./.github/workflows/draw-keymap.yml
 
