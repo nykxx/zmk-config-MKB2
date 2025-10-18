@@ -44,8 +44,8 @@ layers:
   - {t: SPACE, h: Mark}
   - {t: RET, h: Mark}
   - {t: BACKSPACE, h: Fnc}
-  - MENU
   - {t: Num, h: toggle}
+  - MENU
   - {t: F13, h: RALT}
   - LEFT
   - UP
@@ -215,9 +215,9 @@ layers:
   - KP SLASH
   - KP DOT
   - {t: ▽, type: trans}
-  - {t: ENTER, type: held}
-  - {t: ENTER, type: held}
   - ENTER
+  - ENTER
+  - {t: ENTER, type: held}
   - ENTER
   - ENTER
   - ENTER
@@ -234,8 +234,8 @@ layers:
   - ENTER
   - PG DN
   - END
-  - ''
-  - ''
+  - {type: held}
+  - KP 0
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -328,9 +328,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
+  - {t: '&mkp MB1', type: held}
   - {t: '&mkp MB3', type: held}
-  - {t: '&mkp MB2', type: held}
+  - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -416,19 +416,17 @@ layers:
 combos:
 - p: [12, 13]
   k: TAB
-- p: [33, 34]
+- p: [33, 32]
   k: Scr
 - p: [16, 15]
   k: Scr
-- p: [38, 39]
+- p: [39, 42]
   k: Alt+SPACE
 - p: [12, 13, 14]
   k: CAPS
-- p: [36, 41]
+- p: [36, 45]
   k: Ctl+SPACE
 - p: [24, 36]
   k: LEFT GUI
-- p: [37, 38]
+- p: [56, 39]
   k: Num
-- p: [40, 41]
-  k: {t: Num, h: toggle}
