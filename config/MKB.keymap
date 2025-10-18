@@ -33,18 +33,18 @@
         };
 
         mo_scroll {
-            bindings = <&mo SCROLL>;
+            bindings = <&mo 1>;
             key-positions = <33 32>;
         };
 
         mo_scroll2 {
-            bindings = <&mo SCROLL>;
+            bindings = <&mo 1>;
             key-positions = <16 15>;
         };
 
         alt_space {
             bindings = <&kp LA(SPACE)>;
-            key-positions = <39 42>;
+            key-positions = <40 41>;
         };
 
         combo_capslock {
@@ -64,7 +64,7 @@
 
         Mo_Num {
             bindings = <&mo 3>;
-            key-positions = <56 39>;
+            key-positions = <39 40>;
         };
     };
 
