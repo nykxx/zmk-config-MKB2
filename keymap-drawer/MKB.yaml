@@ -22,7 +22,7 @@ layers:
   - K
   - T
   - N
-  - L
+  - S
   - H
   - {t: SQT, h: RCTRL}
   - LSHFT
@@ -37,16 +37,16 @@ layers:
   - J
   - B
   - {t: SEMI, h: RSHFT}
-  - {t: ESC, h: LCTL}
+  - {t: F14, h: LALT}
   - LGUI
   - LALT
   - {t: SPACE, h: Fnc}
   - {t: SPACE, h: Mark}
   - {t: RET, h: Mark}
   - {t: BACKSPACE, h: Fnc}
-  - LEFT
-  - DOWN
-  - RIGHT
+  - MENU
+  - {t: Num, h: toggle}
+  - {t: F13, h: RALT}
   - LEFT
   - UP
   - SPACE
@@ -78,7 +78,7 @@ layers:
   - RBKT
   - Sft+COMMA
   - Sft+PERIOD
-  - LEFT
+  - Sft+SEMI
   - LEFT
   - DOWN
   - UP
