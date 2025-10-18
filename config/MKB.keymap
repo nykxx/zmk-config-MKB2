@@ -177,12 +177,12 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp ESC            &kp Q     &kp L      &kp U     &kp COMMA       &kp PERIOD          &kp F         &kp W               &kp R      &kp Y      &kp P       &kp SLASH
-&mt LCTRL TAB      &kp E     &kp I      &kp A     &kp O           &kp MINUS           &kp K         &kp T               &kp N      &kp S      &kp H       &mt RCTRL SQT
-&kp LSHFT          &kp Z     &kp X      &kp C     &kp V           &kp EQUAL           &kp G         &kp D               &kp M      &kp J      &kp B       &mt RSHFT SEMI
-&ime_alt LALT F14  &kp LGUI  &kp LALT             &lt FUNC SPACE  &lt MARK SPACE      &lt MARK RET  &lt FUNC BACKSPACE             &tog 3     &kp K_MENU  &ime_alt RALT F13
-&kp LEFT           &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                         &kp HOME            &kp PG_UP  &kp ENTER  &kp PG_DN   &kp END
-                                        &none                                                                           &none
+&kp ESC            &kp Q     &kp L      &kp U     &kp COMMA       &kp PERIOD          &kp F      &kp W               &kp R      &kp Y      &kp P      &kp SLASH
+&mt LCTRL TAB      &kp E     &kp I      &kp A     &kp O           &kp MINUS           &kp K      &kp T               &kp N      &kp S      &kp H      &mt RCTRL SQT
+&kp LSHFT          &kp Z     &kp X      &kp C     &kp V           &kp EQUAL           &kp G      &kp D               &kp M      &kp J      &kp B      &mt RSHFT SEMI
+&ime_alt LALT F14  &kp LGUI  &kp LALT             &lt FUNC SPACE  &lt MARK SPACE      &lt 1 RET  &lt FUNC BACKSPACE             &tog 3     &kp K_APP  &ime_alt RALT F13
+&kp LEFT           &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                      &kp HOME            &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                                        &none                                                                        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN  C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
