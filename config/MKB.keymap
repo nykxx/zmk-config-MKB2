@@ -12,7 +12,7 @@
 #define NUM 3
 #define MOUSE 4
 #define SCROLL 5
-#define BT 5
+#define BT6
 
 &mt {
     flavor = "balanced";
@@ -23,7 +23,17 @@
 
 // キー入力から300ms間はAMLを抑制(AML誤発動防止)
 
-&zip_temp_layer { require-prior-idle-ms = <300>; };
+&zip_temp_layer {
+      excluded-positions = <
+        10 // F(Prev)
+        11 // W(Next)
+        20 // S(左クリック)
+        21 // H(中クリック)  
+        22 // "(右クリック)
+        24 // Shift
+    >;
+
+   require-prior-idle-ms = <400>; };
 
 /**************************************************************************/
 
@@ -212,7 +222,7 @@
 &kp ESC     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp F6  &kp F7    &kp F8     &kp F9     &kp F10    &kp F11
 &caps_word  &kp LC(Y)  &none      &none      &none      &none          &none   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp F12
 &kp LC(S)   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)      &none   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp LS(LG(S))
-&trans      &trans     &kp LALT              &trans     &trans         &trans  &trans               &trans     &trans     &mo 6
+&mo BT      &trans     &kp LALT              &trans     &trans         &trans  &trans               &trans     &trans     &mo 6
 &kp LEFT    &kp UP     &kp SPACE  &kp DOWN   &kp RIGHT                         &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                                   &none                                                  &none
             >;
@@ -237,10 +247,10 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &mod_mkp LSHIFT MB4  &mod_mkp LCTRL MB5  &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &mkp MB1   &mkp MB3             &mkp MB2            &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans               &trans              &trans
-&trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans               &trans              &trans
+&trans    &trans  &trans     &trans    &trans     &trans                &trans  &trans    &trans     &mod_mkp LSHIFT MB4  &mod_mkp LCTRL MB5  &trans
+&trans    &trans  &trans     &trans    &trans     &trans                &trans  &trans    &mkp MB1   &mkp MB3             &mkp MB2            &trans
+&trans    &trans  &trans     &trans    &trans     &trans                &trans  &trans    &trans     &trans               &trans              &trans
+&trans    &trans  &trans               &trans     &tog_off MOUSE        &trans  &trans               &trans               &trans              &trans
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER            &kp PG_DN           &kp END
                              &kp A                                              &kp B
             >;
